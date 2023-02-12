@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"readprintf.c"
 
 void setintersection(int a[],int n1,int b[], int n2,int c[],int *pn3)
 {
