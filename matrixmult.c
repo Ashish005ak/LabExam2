@@ -2,7 +2,7 @@
 
 void main()
 {
-    int a[50][50], b[50][50],c[50][50],m1,n1,m2,n2,i,j,k;
+    int a[50][50], b[50][50],c[50][50]={0},m1,n1,m2,n2,i,j,k;
     scanf("%d%d",&m1,&n1);
     for(i=0;i<m1;i++)
         for(j=0;j<n1;j++)
