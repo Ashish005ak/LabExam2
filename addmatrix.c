@@ -12,7 +12,10 @@ void main()
         for(j=0;j<n2;j++)
             scanf("%d",&b[i][j]);
     if(m1!=m2||n1!=n2)
-    goto l1;
+    {
+        printf("\nAddition is not possible");
+        goto l1;
+    }
     for(i=0;i<m1;i++)
         for(j=0;j<n2;j++)
             c[i][j]=a[i][j]+b[i][j];
