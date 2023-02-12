@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"readprintf.c"
 
 void setunion(int a[],int n1,int b[],int n2,int c[], int *pn3)
 {
@@ -17,6 +16,19 @@ void setunion(int a[],int n1,int b[],int n2,int c[], int *pn3)
     }
     *pn3=k;
 }
+void readarr(int x[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&x[i]);
+}
+void printarr(int x[], int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        printf("%d ",x[i]);
+}
+
 void main()
 {
     int a[50],b[50],c[50],n1,n2,n3;

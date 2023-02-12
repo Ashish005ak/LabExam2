@@ -1,21 +1,27 @@
 #include<stdio.h>
-#include"readprintf.c"
-int deletegiven(int x[],int n,int item)
+int deletegiven(int x[],int *pn,int item)
 {
-    int i,j,cnt=0;
-    for(i=0;i<n;i++)
+    int i,j;
+    for(i=0;i<*pn;i++)
         if(x[i]==item)
         {
-            cnt++;
+            *pn=*pn-1;
             break;
         }
-    if(cnt==1)
-    {
-        n=n-1;
-        for(j=i;j<n;j++)
-            x[j]=x[j+1];
-    }
-    return cnt;
+    for(j=i;j<*pn;j++)
+        x[j]=x[j+1];
+}
+void readarr(int x[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&x[i]);
+}
+void printarr(int x[], int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        printf("%d ",x[i]);
 }
 
 void main()
@@ -24,8 +30,6 @@ void main()
     scanf("%d",&n);
     readarr(a,n);
     scanf("%d",&item);
-   cnt=deletegiven(a,n,item);
-   if(cnt==1)
-    n=n-1;
-   printarr(a,n);
+    deletegiven(a,&n,item);
+    printarr(a,n);
 }

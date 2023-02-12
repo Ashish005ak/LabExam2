@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+void main()
+{
+    int a[50],n,i,sum=0;
+    scanf("%d",&n);
+    readarr(a,n);
+    for(i=0;i<n;i++)
+        sum=sum+a[i];
+    printf("%d",sum);
+}
+void readarr(int a[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+}
