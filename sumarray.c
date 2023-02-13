@@ -9,9 +9,9 @@ void main()
         sum=sum+a[i];
     printf("%d",sum);
 }
-void readarr(int a[],int n)
+void readarr(int x[],int n)
 {
     int i;
     for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
+        scanf("%d",&x[i]);
 }

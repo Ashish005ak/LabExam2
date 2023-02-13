@@ -9,7 +9,7 @@ void setunion(int a[],int n1,int b[],int n2,int c[], int *pn3)
     {
         for(i=0;i<n1;i++)
             if(a[i]==b[j])
-            break;
+                break;
         if(i==n1)
             c[k++]=b[j];
 

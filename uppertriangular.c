@@ -20,8 +20,8 @@ void main()
             }
         }
         if(val==1)
-        printf("\n not upper triangular");
+            printf("\n not upper triangular");
         else
-        printf("\nUpper triangular");
+            printf("\nUpper triangular");
 }
 //By Ash....:)
