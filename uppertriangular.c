@@ -24,3 +24,4 @@ void main()
         else
         printf("\nUpper triangular");
 }
+//By Ash....:)
