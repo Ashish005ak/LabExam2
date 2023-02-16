@@ -1,12 +1,5 @@
 #include<stdio.h>
-void main()
-{
-    int a[80],n;
-    scanf("%d",&n);
-    readarr(a,n);
-    insertsort(a,n);
-    printarr(a,n);
-}
+
 void insertsort(int x[], int n)
 {
     int item,i,j;
@@ -29,4 +22,12 @@ void printarr(int x[], int n)
     int i;
     for(i=0;i<n;i++)
         printf("%d ",x[i]);
+}
+void main()
+{
+    int a[80],n;
+    scanf("%d",&n);
+    readarr(a,n);
+    insertsort(a,n);
+    printarr(a,n);
 }

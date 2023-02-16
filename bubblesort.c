@@ -1,12 +1,5 @@
 #include<stdio.h>
-void main()
-{
-    int a[80],n;
-    scanf("%d",&n);
-    readarr(a,n);
-    bubble(a,n);
-    printarr(a,n);
-}
+
 void bubble(int x[],int n)
 {
     int i,j,flag=1,t;
@@ -36,4 +29,12 @@ void printarr(int x[], int n)
     int i;
     for(i=0;i<n;i++)
         printf("%d ",x[i]);
+}
+void main()
+{
+    int a[80],n;
+    scanf("%d",&n);
+    readarr(a,n);
+    bubble(a,n);
+    printarr(a,n);
 }

@@ -1,4 +1,11 @@
 #include<stdio.h>
+
+void readarr(int x[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&x[i]);
+}
 void main()
 {
     int a[50],n,val,loc,i;
@@ -15,10 +22,4 @@ void main()
         }
     }
     printf("%d",loc);
-}
-void readarr(int x[],int n)
-{
-    int i;
-    for(i=0;i<n;i++)
-        scanf("%d",&x[i]);
 }

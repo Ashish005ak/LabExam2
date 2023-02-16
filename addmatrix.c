@@ -13,7 +13,7 @@ void main()
             scanf("%d",&b[i][j]);
     if(m1!=m2||n1!=n2)
     {
-        printf("\nAddition is not possible");
+        printf("Addition is not possible");
         goto l1;
     }
     for(i=0;i<m1;i++)

@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+void readarr(int x[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&x[i]);
+}
 void main()
 {
     int a[50],n,i,sum=0;
@@ -9,9 +15,4 @@ void main()
         sum=sum+a[i];
     printf("%d",sum);
 }
-void readarr(int x[],int n)
-{
-    int i;
-    for(i=0;i<n;i++)
-        scanf("%d",&x[i]);
-}
+//By Ash...:)

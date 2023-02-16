@@ -13,7 +13,7 @@ void main()
             scanf("%d",&b[i][j]);
     if(n1!=m2)
     {
-        printf("Multiplication not possible");
+        printf("Multiplication is not possible");
         goto l1;
     }
     for(i=0;i<m1;i++)

@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+void readarr(int a[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+}
 void main()
 {
     int a[50],n,i,big;
@@ -10,10 +16,4 @@ void main()
         if(a[i]>big)
         big=a[i];
     printf("%d",big);
-}
-void readarr(int a[],int n)
-{
-    int i;
-    for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
 }

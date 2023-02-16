@@ -1,13 +1,5 @@
 #include<stdio.h>
 
-void main()
-{
-    int a[50],n;
-    scanf("%d",&n);
-    readarr(a,n);
-    selectsort(a,n);
-    printarr(a,n);
-}
 void selectsort(int x[], int n)
 {
     int i,j,indx,t;
@@ -33,4 +25,12 @@ void printarr(int x[], int n)
     int i;
     for(i=0;i<n;i++)
         printf("%d ",x[i]);
+}
+void main()
+{
+    int a[50],n;
+    scanf("%d",&n);
+    readarr(a,n);
+    selectsort(a,n);
+    printarr(a,n);
 }
